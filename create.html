@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>發布帖子｜香港火災後交流論壇</title>
+</head>
+<body>
+    <!-- Site header -->
+    <header>
+        <h1>發布帖子</h1>
+
+        <!-- Main navigation -->
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="posts.html">瀏覽帖子</a>
+            <a href="create.html">發布帖子</a>
+        </nav>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+        <!-- New post form -->
+        <form action="#" method="post">
+            <p>
+                <label for="title">帖子標題：</label>
+                <input type="text" id="title" name="title" required>
+            </p>
+
+            <p>
+                <label for="category">帖子分類：</label>
+                <select id="category" name="category" required>
+                    <option value="">請選擇分類</option>
+                    <option value="emergency">緊急求助</option>
+                    <option value="supplies">物資互助</option>
+                    <option value="shelter">臨時安置</option>
+                    <option value="information">災後資訊</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="content">帖子內容：</label><br>
+                <textarea id="content" name="content" rows="8" required></textarea>
+            </p>
+
+            <p>
+                <label for="contact">聯絡方式（選填）：</label>
+                <input type="text" id="contact" name="contact">
+            </p>
+
+            <button type="submit">發布帖子</button>
+        </form>
+    </main>
+
+    <!-- Site footer -->
+    <footer>
+        <p>請勿公開身份證號碼、住址等敏感個人資料。</p>
+    </footer>
+</body>
+</html>
