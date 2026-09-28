@@ -1,0 +1,46 @@
+export const categories = [
+  { id: "all", label: "全部情報", code: "00" },
+  { id: "emergency", label: "緊急求助", code: "01" },
+  { id: "supplies", label: "物資互助", code: "02" },
+  { id: "shelter", label: "臨時安置", code: "03" },
+  { id: "information", label: "災後資訊", code: "04" },
+];
+
+export const posts = [
+  {
+    id: "temporary-shelter",
+    title: "需要臨時住宿協助",
+    category: "shelter",
+    categoryLabel: "臨時安置",
+    date: "2026.09.23",
+    time: "18:42",
+    location: "九龍東",
+    priority: "urgent",
+    excerpt: "一家三口需要兩晚的臨時住宿，希望取得安全安置資訊。",
+    content: "我們一家三口需要兩晚的臨時住宿。如有相關資訊，請在下方留言。",
+  },
+  {
+    id: "community-supplies",
+    title: "社區物資領取資訊",
+    category: "supplies",
+    categoryLabel: "物資互助",
+    date: "2026.09.23",
+    time: "16:15",
+    location: "灣仔",
+    priority: "normal",
+    excerpt: "社區中心現正提供飲用水、乾糧及基本清潔用品。",
+    content: "社區中心現正提供飲用水、乾糧及基本清潔用品，數量有限，請有需要的居民先致電查詢。",
+  },
+  {
+    id: "road-update",
+    title: "主要道路臨時封閉更新",
+    category: "information",
+    categoryLabel: "災後資訊",
+    date: "2026.09.23",
+    time: "14:08",
+    location: "港島北",
+    priority: "normal",
+    excerpt: "整理目前已確認的道路封閉範圍與替代交通安排。",
+    content: "部分道路仍在進行安全檢查，請依照現場人員指示改道，並預留額外交通時間。",
+  },
+];
