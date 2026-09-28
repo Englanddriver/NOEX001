@@ -61,5 +61,25 @@
     <footer>
         <p>請勿公開身份證號碼、住址等敏感個人資料。</p>
     </footer>
+
+    <!-- AI assistant widget -->
+    <button id="ai-trigger" type="button" aria-label="打開 AI 助手" aria-controls="ai-panel" aria-expanded="false">✨</button>
+
+    <section id="ai-panel" aria-label="AI 助手" hidden>
+        <header>
+            <strong>AI 助手</strong>
+            <button id="ai-close" type="button" aria-label="關閉 AI 助手">×</button>
+        </header>
+
+        <div id="ai-messages" aria-live="polite">
+            <div class="ai-message">你好，需要甚麼幫助？</div>
+        </div>
+
+        <form id="ai-form">
+            <label for="ai-input">輸入問題</label>
+            <input id="ai-input" name="message" type="text" placeholder="輸入問題…" autocomplete="off" required>
+            <button type="submit">發送</button>
+        </form>
+    </section>
 </body>
 </html>
